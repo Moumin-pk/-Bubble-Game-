@@ -15,7 +15,7 @@ html, body{
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: rgb(45, 45, 45)
+    background-color: 
 }
 .panel{
     width: 80%;
@@ -29,10 +29,15 @@ html, body{
     padding: 0 30%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: cornflowerblue;
+}
+.panel-top h2{
+    justify-content: center;
+    text-align: center;
+    color: #dcdcdc;
 }
 .elem{
     width: 10%;
@@ -43,26 +48,33 @@ html, body{
 .elem h4{
 font-size: 2vw;
 font-weight: 700;
+
+}
+.elem #hit{
+color: crimson;
 }
 .elem .box{
     /* width: 50px;
-    height: 20px; */
-    background-color: aliceblue; 
+    height: 20px; */ 
     margin-left: 4px;
     padding: 8px;
     border-radius: 5px;
     font-size: 14px;
     font-weight: 800;
+    background-color: #dcdcdc;
     color:cornflowerblue;
 }
 .panel-bot{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     width: 100%;
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     padding: 20px;
 }
+
 
 .bubble{
     display: flex;
@@ -90,10 +102,14 @@ font-weight: 700;
         height: 100%;
     }
     .panel-top{
+        /* justify-content: center; */
         padding: 0 10%;
         width: 100%;
         height: 70px;
         background-color: cornflowerblue;
+    }
+    .panel-top h2{
+        margin-left:18px;
     }
     .elem{
         width: 10%;
@@ -104,11 +120,16 @@ font-weight: 700;
         }
     .panel-bot{
         margin-top: 5px;
-        overflow:scroll;
+        overflow:hidden;
         gap: 20px;
         width: 100%;
-        height: calc(100% - 70px);
+        height: calc(100% - 120px);
         padding: 10px;
+    }
+    .bottom{
+        width: 100%;
+        height: 50px;
+        background-color: cornflowerblue;
     }
     .bubble{
         width: 60px;

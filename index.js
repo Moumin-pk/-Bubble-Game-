@@ -23,7 +23,12 @@ setInterval(function(){
         document.querySelector('#timeinterval').textContent = time;
      }else{
         clearInterval(stoptime);
-        document.write('Time is up');
+        document.querySelector('.panel-bot').innerHTML = `<h1>Game is Over!♥️</h1>`
+        document.querySelector('.panel-top').innerHTML = `<h2> Your Score is : ${culter}</h2>`
+        document.querySelector('.panel-top').style.backgroundColor = 'red';
+        document.querySelector('.bottom').style.backgroundColor = 'red';
+         
+        
      }
 
 }, 1000);
